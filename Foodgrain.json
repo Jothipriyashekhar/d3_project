@@ -1,0 +1,462 @@
+[
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains",
+
+
+"value": 257.13
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Kharif",
+
+
+"value": 128.07
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Rabi",
+
+
+"value": 129.06
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Rice",
+
+
+"value": 105.24
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Rice Kharif",
+
+
+"value": 92.37
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Rice Rabi",
+
+
+"value": 12.87
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Wheat Rabi",
+
+
+"value": 93.51
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Jowar",
+
+
+"value": 5.28
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Jowar Kharif",
+
+
+"value": 2.84
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Jowar Rabi",
+
+
+"value": 2.44
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Bajra Kharif",
+
+
+"value": 8.74
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Maize",
+
+
+"value": 22.26
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Maize Kharif",
+
+
+"value": 16.19
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Maize Rabi",
+
+
+"value": 6.06
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Ragi Kharif",
+
+
+"value": 1.57
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Small Millets Kharif",
+
+
+"value": 0.44
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Barley Rabi",
+
+
+"value": 1.75
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Coarse Cereals",
+
+
+"value": 40.04
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Coarse Cereals Kharif",
+
+
+"value": 29.79
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Coarse Cereals Rabi",
+
+
+"value": 10.25
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Cereals",
+
+
+"value": 238.79
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Cereals Kharif",
+
+
+"value": 122.16
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Cereals Rabi",
+
+
+"value": 116.63
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Tur Kharif",
+
+
+"value": 3.02
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Other Kharif Pulses Kharif",
+
+
+"value": 0.62
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Gram Rabi",
+
+
+"value": 8.83
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Other Kharif Pulses Rabi",
+
+
+"value": 2.73
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Pulses",
+
+
+"value": 18.34
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Pulses Kharif",
+
+
+"value": 5.91
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Pulses Rabi",
+
+
+"value": 12.43
+
+},
+
+{
+
+
+"Particulars": "Agriculture Production Foodgrains Production Foodgrains Kharif",
+
+
+"value": 21
+
+},
+
+{
+
+
+"Particulars": "Agriculture Production Foodgrains Production Foodgrains Rabi",
+
+
+"value": 21
+
+},
+
+{
+
+
+"Particulars": "Agriculture Production Foodgrains Production Foodgrains Coarse Cereals Kharif",
+
+
+"value": 21
+
+},
+
+{
+
+
+"Particulars": "Agriculture Production Foodgrains Production Foodgrains Coarse Cereals Rabi",
+
+
+"value": 21
+
+},
+
+{
+
+
+"Particulars": "Agricultural Production Foodgrains Production Foodgrains Coarse Cereals Rice Kharif",
+
+
+"value": 21
+
+},
+
+{
+
+
+"Particulars": "Agriculture Production Foodgrains Production Foodgrains Coarse Cereals Rice Rabi",
+
+
+"value": 21
+
+},
+
+{
+
+
+"Particulars": "Agriculture Production Foodgrains Production Foodgrains Coarse Cereals Wheat Rabi",
+
+
+"value": 21
+
+},
+
+{
+
+
+"Particulars": "Agriculture Production Foodgrains Production Foodgrains Coarse Cereals Jowar Kharif",
+
+
+"value": 21
+
+},
+
+{
+
+
+"Particulars": "Agriculture Production Foodgrains Production Foodgrains Coarse Cereals Jowar Rabi",
+
+
+"value": 21
+
+},
+
+{
+
+
+"Particulars": "Agriculture Production Foodgrains Production Foodgrains Coarse Cereals Bajra Kharif",
+
+
+"value": 21
+
+},
+
+{
+
+
+"Particulars": "Agriculture Production Foodgrains Production Foodgrains Coarse Cereals Maize Kharif",
+
+
+"value": 21
+
+},
+
+{
+
+
+"Particulars": "Agriculture Production Foodgrains Production Foodgrains Coarse Cereals Maize Rabi",
+
+
+"value": 21
+
+},
+
+{
+
+
+"Particulars": "Agriculture Production Foodgrains Production Foodgrains Pulses Tur Kharif",
+
+
+"value": 21
+
+},
+
+{
+
+
+"Particulars": "Agriculture Production Foodgrains Production Foodgrains Pulses Gram Rabi",
+
+
+"value": 21
+
+},
+
+{
+
+
+"Particulars": "Agriculture Production Foodgrains Production Foodgrains Pulses Kharif",
+
+
+"value": 21
+
+},
+
+{
+
+
+"Particulars": "Agriculture Production Foodgrains Production Foodgrains Pulses Rabi",
+
+
+"value": 21
+
+}
+]
