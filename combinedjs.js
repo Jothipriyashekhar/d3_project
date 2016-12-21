@@ -27,8 +27,8 @@ r.on('line', function(line) {
 		if(isHeader) { 
 			header[i]=splitted[i].trim();
 		}
-		else if(splitted[0].includes("Oilseeds")&&!splitted[0].includes("Foodgrain")) {
-		 if((header[i]=="Particulars")|| (header[i]=="3-2013")) {
+		 else if(splitted[0].includes("Oilseeds")&&!splitted[0].includes("Foodgrain")) {
+		 if((header[i]=="Particulars") || (header[i]=="3-2013")) {
 				
 				if((splitted[0].includes("Target"))||
 					(splitted[0].includes("Achievements"))|| (splitted[0].includes("Yield"))|| 
@@ -50,8 +50,9 @@ r.on('line', function(line) {
 			}
 		} 
 
-		else if((header[i]=="Particulars")|| (header[i]=="3-2013")) {
-			if(splitted[0].includes("Foodgrain")&&!splitted[0].includes("Oilseeds")) {
+		 //console.log("food");
+		else if(splitted[0].includes("Foodgrain")) {
+				if((header[i]=="Particulars")|| (header[i]=="3-2013")) {
 				if((splitted[0].includes("Target"))||(splitted[0].includes("Achievements"))|| 
 					(splitted[0].includes("Yield"))|| (splitted[0].includes("Area"))|| 
 					(splitted[0].includes("Volume"))|| (splitted[0].includes("Other Cash Crops "))||
@@ -59,30 +60,31 @@ r.on('line', function(line) {
 					break;
 				}
 				else {
-					flag2=true;
 					//console.log(header[i]);
 					if(i==0) {
 						obj2[header[i]]=splitted[i];
 						//console.log(obj);
 					}
 					else {
-						obj2[header[i].replace("3-2013","value")]=parseFloat(splitted[i+1].replace("NA",21));
+	 					obj2[header[i].replace("3-2013","value")]=parseFloat(splitted[i+1].replace("NA",21));
 						//console.log(obj);
 					}
 				}
 			}
 		}
-		 console.log("hai");
+		 //console.log("southern");
+		 else if((header[i]=="Particulars") || (/3-/i.test(header[i]))) {
 			 if((splitted[0].includes("Rice Yield Tamil Nadu"))||(splitted[0].includes("Rice Yield Kerala"))||
 				(splitted[0].includes("Rice Yield Karnataka"))||(splitted[0].includes("Rice Yield Andhra Pradesh")) ){
-				if((header[i]=="Particulars")|| (/3-/i.test(header[i]))) {
+				
 					if(i==0) {
+						//console.log("hai");
 						obj3[header[i]]=splitted[i];
 						for(i=3;i<25;i++)
 							{
 								splitted[i]=splitted[i+1].replace("NA",21);
 								sum += parseFloat(splitted[i]);
-								// console.log(sum);
+								//console.log(sum);
 								obj3["rice production"]=sum;
 								flag3=true;
 
@@ -93,8 +95,9 @@ r.on('line', function(line) {
 		}
 
 		 
-			else if(splitted[0].includes("Commercial")) {
-				if ((header[i]=="Particulars")|| (/3-/i.test(header[i]))) {
+			 
+				 if ((header[i]=="Particulars")|| (/3-/i.test(header[i]))) {
+					if(splitted[0].includes("Commercial")) {
 				if(i==0) {
 						obj4[header[i]]=splitted[i];
 						for(i=3;i<25;i++)
@@ -125,10 +128,10 @@ r.on('line', function(line) {
 	}
 
 	isHeader=false;	
-	fs.writeFileSync("../json/Oilseeds.json",JSON.stringify(json1,null,'\r\n'),"utf8");
-	fs.writeFileSync("../json/Foodgrain.json",JSON.stringify(json2,null,'\r\n'),"utf8");
-	fs.writeFileSync("../json/Southern.json",JSON.stringify(json3,null,'\r\n'),"utf8");
-	fs.writeFileSync("../json/Commercial.json",JSON.stringify(json4,null,'\r\n'),"utf8");
+	fs.writeFileSync("../jsonproject/Oilseeds.json",JSON.stringify(json1,null,'\r\n'),"utf8");
+	fs.writeFileSync("../jsonproject/Foodgrain.json",JSON.stringify(json2,null,'\r\n'),"utf8");
+	fs.writeFileSync("../jsonproject/Southern.json",JSON.stringify(json3,null,'\r\n'),"utf8");
+	fs.writeFileSync("../jsonproject/Commercial.json",JSON.stringify(json4,null,'\r\n'),"utf8");
 	obj1={};
 	obj2={};
 	obj3={};
