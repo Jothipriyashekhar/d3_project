@@ -27,11 +27,11 @@ r.on('line', function(line) {
 						flag=true;
 						for(i=3;i<25;i++)
 							{
-								splitted[i]=splitted[i+1].replace("NA",21);
+								splitted[i]=splitted[i+1].replace("NA","0");
 								//sum += parseFloat(splitted[i]);
 								// console.log(sum);
 						//	obj["year"]=splitted[i];
-						obj[header[i]]=parseFloat(splitted[i+1].replace("NA",21));		
+						obj[header[i]]=parseFloat(splitted[i+1].replace("NA","0"));		
 
 							}	
 				

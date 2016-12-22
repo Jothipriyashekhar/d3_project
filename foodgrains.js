@@ -28,13 +28,13 @@ r.on('line', function(line) {
 				}
 				else {
 					flag=true;
-					console.log(header[i]);
+					//console.log(header[i]);
 					if(i==0) {
 						obj[header[i]]=splitted[i];
 						//console.log(obj);
 					}
 					else {
-						obj[header[i].replace("3-2013","value")]=parseFloat(splitted[i+1].replace("NA",21));
+						obj[header[i].replace("3-2013","value")]=parseFloat(splitted[i+1].replace("NA","0"));
 						//console.log(obj);
 					}
 				}
@@ -45,6 +45,6 @@ r.on('line', function(line) {
 		json.push(obj);
 	}
 	isHeader=false;	
-	fs.writeFileSync("../json/Foodgrain.json",JSON.stringify(json,null,'\r\n'),"utf8");
+	fs.writeFileSync("../jsonproject/Foodgrain.json",JSON.stringify(json,null,'\r\n'),"utf8");
 	obj={};
 });

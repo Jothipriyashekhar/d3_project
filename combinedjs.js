@@ -43,7 +43,7 @@ r.on('line', function(line) {
 						//console.log(obj);
 					}
 					else {
-						obj1[header[i].replace("3-2013","value")]=parseFloat(splitted[i+1].replace("NA",21));
+						obj1[header[i].replace("3-2013","value")]=parseFloat(splitted[i+1].replace("NA","0"));
 						//console.log(obj);
 					}
 				}
@@ -66,33 +66,32 @@ r.on('line', function(line) {
 						//console.log(obj);
 					}
 					else {
-	 					obj2[header[i].replace("3-2013","value")]=parseFloat(splitted[i+1].replace("NA",21));
+	 					obj2[header[i].replace("3-2013","value")]=parseFloat(splitted[i+1].replace("NA","0"));
 						//console.log(obj);
 					}
 				}
 			}
 		}
 		 //console.log("southern");
-		 else if((header[i]=="Particulars") || (/3-/i.test(header[i]))) {
-			 if((splitted[0].includes("Rice Yield Tamil Nadu"))||(splitted[0].includes("Rice Yield Kerala"))||
+		 else if((header[i]=="Particulars")|| (/3-/i.test(header[i]))) {
+			if((splitted[0].includes("Rice Yield Tamil Nadu"))||(splitted[0].includes("Rice Yield Kerala"))||
 				(splitted[0].includes("Rice Yield Karnataka"))||(splitted[0].includes("Rice Yield Andhra Pradesh")) ){
-				
-					if(i==0) {
-						//console.log("hai");
-						obj3[header[i]]=splitted[i];
+				if(i==0) {
+						obj[header[i]]=splitted[i];
+						flag=true;
 						for(i=3;i<25;i++)
 							{
-								splitted[i]=splitted[i+1].replace("NA",21);
-								sum += parseFloat(splitted[i]);
-								//console.log(sum);
-								obj3["rice production"]=sum;
-								flag3=true;
+								splitted[i]=splitted[i+1].replace("NA","0");
+								//sum += parseFloat(splitted[i]);
+								// console.log(sum);
+						//	obj["year"]=splitted[i];
+						obj[header[i]]=parseFloat(splitted[i+1].replace("NA","0"));		
 
 							}	
 				
 				}
 			}
-		}
+		}         
 
 		 
 			 
@@ -102,7 +101,7 @@ r.on('line', function(line) {
 						obj4[header[i]]=splitted[i];
 						for(i=3;i<25;i++)
 							{
-								splitted[i]=splitted[i+1].replace("NA",21);
+								splitted[i]=splitted[i+1].replace("NA","0");
 								sum1 += parseFloat(splitted[i]);
 								// console.log(sum);
 								obj4["year"]=sum1;
